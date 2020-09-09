@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My WEATHER APP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--Dette er til css-->
+  <link rel="stylesheet" type="text/css" href="css/my_style.css">
+
+  <!--Dette er til javascript-->
+  <script src="js/script.js"></script>
+
+  <!--Dette er til jquery-->
+  <!--<script src="js/jq.js"></script>-->
+
+</head>
+<body>
+
+    <div class="container">            
+            
+        
+         <!--Script forsøg med openweather web sitet -->                       
+        <div class="content_frame">
+            
+            <!--Dette er specifik call på by navn -->
+            <div class="content-outer">
+                <div class="content-inner">
+                    
+                    <article>              
+                        <h1>For information om vejret <br />Indtast by navn </h1>
+                                                  
+                        <input type="text" id="city_name" name="name" value="Thisted" class="input_field">
+                        <p><i>*Start med stor bogstav og tryk submit*</i></p>                                  
+                        <input onclick="openWeatherMapScriptCityNameInput()" type="button" value="Submit" id="myButton" class="button">
+                    </article>  
+                    
+                    <article>
+                        <h3 id="land"></h3>
+                        <h1 id="by_navn"></h1>
+                    </article>
+                        
+                    <article>
+                        <h1 id="temperatur"></h1>                        
+                        <p id="icons"></p>
+                    </article>
+                      
+                    <article>
+                        <h4><i>Vind styrke og retning</i></h4>
+                        <h2 id="vind_styrke"></h2>
+                    </article> 
+
+                    <article class="compas">
+                        <p>&nbsp</p>
+                        <p id="wind_angle"></p>
+                    </article>      
+                    
+                    
+                    
+                                  
+                </div>
+            </div>
+        </div>
+    
+
+            
+        
+        <div class="footer">
+            &nbsp
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
