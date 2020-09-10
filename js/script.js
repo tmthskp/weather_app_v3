@@ -26,8 +26,11 @@ function SendDatatoPage(data)
     document.getElementById("by_navn").innerHTML = `${city}`
     document.getElementById("vind_styrke").innerHTML = `${wind}`  
     document.getElementById("temperatur").innerHTML = `${tempratur}°` 
-    document.getElementById("icons").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@4x.png" style="width: 170px"/>`
     document.getElementById("wind_angle").innerHTML = `<img src="image/pil.png" style=" transform: rotate(${pil}deg); width: 100px"/>`
+    
+    document.getElementById("icons").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@4x.png" style="width: 150px"/>`
+    document.getElementById("icons_2").innerHTML = `<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${icon}.svg" style="width: 150px"/>`
+    document.getElementById("icons_3").innerHTML = `<img src="icons/${icon}.png" style="width: 150px"/>`
     
 }
 
